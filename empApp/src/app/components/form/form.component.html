@@ -1,0 +1,24 @@
+
+<form class="form-horizontal" #frm="ngForm">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="emp.name" 
+       class="form-control"
+  [(ngModel)]="emp.name">
+     </div>
+    
+    <div class="form-group">
+        <label>Job</label>
+        <input type="text" name="emp.job" class="form-control"
+    [(ngModel)]="emp.job">
+    </div>
+    <div class="form-group">
+        <label>Salary</label>
+        <input type="text" name="emp.salary" class="form-control"
+    [(ngModel)]="emp.salary">
+    </div>
+      <div class="form-group">
+         <button type="button" class="btn btn-primary" (click)="save()">Add</button>
+      </div>
+  
+  </form>

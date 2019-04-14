@@ -1,0 +1,11 @@
+<table class="table table-bordered table-striped table-hover">
+<tr>
+  <th>Name</th><th>Job</th><th>Salary</th><th>Action</th>
+</tr>
+<tr *ngFor="let emp of empService.empList">
+    <td>{{emp.name}}</td>
+    <td>{{emp.job}}</td>
+    <td>{{emp.salary}}</td>
+    <td><a href="#" (click)="edit(emp)">edit</a></td>
+</tr>
+</table>
