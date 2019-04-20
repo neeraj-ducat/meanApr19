@@ -1,0 +1,14 @@
+<p><br/></p>
+<button type="button" class="btn btn-primary"
+(click)="fetch()">Fetch To Do List</button>
+
+<hr/>
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+      <th>ToDo Task</th><th>Completed</th>
+    </tr>
+    <tr *ngFor="let todo of todoService.todoList">
+        <td>{{todo.title}}</td>
+        <td>{{todo.completed}}</td>
+    </tr>
+    </table>
