@@ -1,0 +1,18 @@
+<div class="row">
+<app-newtodo></app-newtodo>
+</div>
+<hr/>
+<div class="row">
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+      <th>ToDo Task</th><th>Completed</th><th>Action</th>
+    </tr>
+    <tr *ngFor="let todo of todoService.todoList">
+        <td>{{todo.title}}</td>
+        <td>{{todo.completed}}</td>
+        <td><a href=# (click)="remove(todo)">delete</a> &nbsp;
+          <a href=# (click)="complete(todo)">Complete</a>
+        </td>
+    </tr>
+    </table>
+  </div>

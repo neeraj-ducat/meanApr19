@@ -1,0 +1,15 @@
+<ngx-alerts></ngx-alerts>
+<h3>New To Do Task</h3>
+<form class="form-horizontal">
+<div class="form-group">
+<input type="text" 
+class="form-control" 
+name="todo.title"
+[(ngModel)]="todo.title"
+placeholder="Todo task">
+</div>
+<div class="form-group">
+ <button type="button" class="btn btn-primary"
+ (click)="save()">Add Todo Task</button>
+  </div>
+</form>
