@@ -1,0 +1,8 @@
+<h3>It is admin dashboard.</h3>
+<a href="#" routerLink="users">Users</a> <br/>
+<form>
+    <input type="text" name="rep"
+    [(ngModel)]="rep" placeholder="Report Type"/> <br/>
+    <button type="button" (click)="showReport()">Show Report</button>
+  </form>
+<router-outlet></router-outlet>
