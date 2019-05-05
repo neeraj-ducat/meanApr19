@@ -1,0 +1,17 @@
+<h3 appDummy></h3>
+<p appDummy></p>
+
+Flag: {{flag}}
+<button type="button" (click)="toggle()">Toggle Flag</button>
+
+<div *ngIf="flag else headings">
+    It should be displayed when the flag is true.
+</div>
+
+<ng-template #headings>
+    <h1>It is h1 heading.</h1>
+    <h2>It is h2 heading.</h2>
+    <h3>It is h3 heading.</h3>
+    <h4>It is h4 heading.</h4>
+    <h5>It is h5 heading.</h5>
+</ng-template>

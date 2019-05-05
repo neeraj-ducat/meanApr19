@@ -5,13 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class NationalityPipe implements PipeTransform {
 
-  list : [
+  map :Map<string,string> = new Map([
     ['in','India'],
-    ['us', 'United States of Ameria'],
+    ['us', 'United States of America'],
     ['fr', 'France'],
     ['au', 'Australia']
-  ];
-  map :Map<string,string> = new Map(this.list);
+  ]);
   
   // transfromt the country code into country name
   transform(value: any, args?: any): any {
