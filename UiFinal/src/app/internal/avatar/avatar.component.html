@@ -1,0 +1,12 @@
+<div class="row">
+ <img [src]="userService.current.imageUrl" class="img-thumbnail"
+ width="50%" height="35%" />
+</div>
+<div class="row">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <file-uploader [maxSizeInKb]="110" [allowMultiple]="False" [fileType]="'image/*'" 
+      (onSelection)="fileuploaderFileChange($event)"  [required]="false"></file-uploader>
+    </div>
+  </form>
+ </div>

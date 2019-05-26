@@ -1,0 +1,13 @@
+<div class="row">
+<div class="col-3">
+    <img src="assets/images/logo.png" />
+</div>
+<div class="col-3 offset-6" *ngIf="userService.current != null">
+  <br/>
+   Welcome, {{userService.current.name}}
+   <img [src]="userService.current.imageUrl" class="rounded-circle" width="35%" height="50%"/>
+</div>
+</div>
+<div class="row">
+    <ngx-alerts></ngx-alerts>
+</div>
